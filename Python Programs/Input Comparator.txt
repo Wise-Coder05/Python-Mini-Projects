@@ -1,0 +1,2 @@
+x, y, z, n = int(input()), int(input()), int(input()), int(input())
+print ([[a,b,c] for a in range(0,x+1) for b in range(0,y+12:50 12:50 23-06-202023-06-20201) for c in range(0,z+1) if a + b + c != n ])

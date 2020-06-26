@@ -1,0 +1,35 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the pairs function below.
+def pairs(a,k):
+    # a is the list of numbers and k is the difference value
+    c=0
+    for i in a:
+        g=i+k
+        if g in a:
+            c+=1;
+       
+    return  c
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    nk = input().split()
+
+    n = int(nk[0])
+
+    k = int(nk[1])
+
+    a = list(map(int, input().rstrip().split()))
+
+    result = pairs(a,k)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
